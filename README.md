@@ -26,6 +26,7 @@ Air pollution is one of the most serious environmental challenges affecting huma
 ## Dataset Information
 
 * **Dataset Name:** Air Quality Index (AQI) Dataset
+* **Dataset source** : https://www.kaggle.com/datasets/neomatrix369/air-quality-data-in-india-extended
 * **Problem Type:** Regression
 * **Target Variable:** AQI
 
@@ -79,7 +80,7 @@ Air pollution is one of the most serious environmental challenges affecting huma
 
 | Model | R² Score | MAE | RMSE |
 |-------|---------:|----:|------:|
-| Linear Regression | 0.8238 | 30.06 | 456.79 |
+| Linear Regression | 0.8238 | 30.06 | 45.679 |
 | **Random Forest** | **0.9097** | **20.48** | **40.65**| 
 | XGBoost | 0.8965 | 30.03 | 43.51 |
 
@@ -114,7 +115,23 @@ After comparing all models, **Random Forest Regressor** was selected as the fina
 The Random Forest model demonstrates strong predictive performance with a **Training Score of 0.9868** and a **Testing Score of 0.9110**. The small performance gap indicates good generalization capability with minimal overfitting, making it the most suitable model for deployment.
 
 ---
+# Deployment (Streamlit Live app)
 
+Live app : https://air-quality-index-predictor-nzdc3k2q4w9fp2smrzbpta.streamlit.app/
+
+---
+## AQI Categories
+
+| AQI Range | Category |
+|-----------|----------|
+| 0 - 50 | Good |
+| 51 - 100 | Satisfactory |
+| 101 - 200 | Moderate |
+| 201 - 300 | Poor |
+| 301 - 400 | Very Poor |
+| 401 - 500 | Severe |
+
+---
 
 ## Project Structure
 
@@ -129,23 +146,6 @@ Air-Quality-Index-Predictor/
 ├── requirements.txt
 └── README.md
 ```
-
-
-
----
-
-## AQI Categories
-
-| AQI Range | Category |
-|-----------|----------|
-| 0 - 50 | Good |
-| 51 - 100 | Satisfactory |
-| 101 - 200 | Moderate |
-| 201 - 300 | Poor |
-| 301 - 400 | Very Poor |
-| 401 - 500 | Severe |
-
-
 ---
 
 ## Author
@@ -153,5 +153,3 @@ Air-Quality-Index-Predictor/
 **Yuvraj Singh**
 
 GitHub: https://github.com/yuvrajsinghind07
-
-
